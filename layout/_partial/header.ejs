@@ -3,7 +3,11 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
+        <a href="<%- url_for() %>" id="logo">
+        <object id="svglogo" type="image/svg+xml" data="<%- url_for() %>logo.svg">
+            <%= config.title %>
+        </object>
+        </a>
       </h1>
       <% if (theme.subtitle){ %>
         <h2 id="subtitle-wrap">
